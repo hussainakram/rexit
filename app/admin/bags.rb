@@ -31,6 +31,7 @@ ActiveAdmin.register Bag do
     def calculate_price
       @bag = Bag.find(params[:id])
       @bag.update_column(:weight, params[:bag][:weight])
+      @bag.update_column(:bag_type, params[:bag][:bag_type])
       if @bag.bag_type.present?
         if @bag.bag_type == "PET"
           price = @bag.weight.to_i * 32
@@ -39,7 +40,8 @@ ActiveAdmin.register Bag do
           price = @bag.weight.to_i * 52
           @bag.update_column(:price, price)
         elsif @bag.bag_type == "Mixed/Dry"
-          @bag.update_column(:price, @bag.weight * 12)
+          price = @bag.weight.to_i * 12
+          @bag.update_column(:price, price)
         end
       end
       redirect_to resource_path
