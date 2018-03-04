@@ -15,15 +15,6 @@
  */
 
 
-.home_page {
-  background: image-url("jumbotron-image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 724px;
-  border-radius: 20px;
-  width: 100%;
-  opacity: 0.2;
-}
 .navbar-brand:hover {
   background-color: transparent;
   color: #999999;
@@ -58,4 +49,20 @@
 
 .logo {
   width: 92px;
+}
+
+.home_page {
+  background: image-url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+
+.feature {
+  width: 330px;
+  height: 250px;
+  border-radius: 50px;
 }
