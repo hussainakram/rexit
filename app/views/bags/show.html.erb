@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @bag.bag_type %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @bag.weight %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @bag.price %>
+</p>
+
+<%= link_to 'Edit', edit_bag_path(@bag) %> |
+<%= link_to 'Back', bags_path %>

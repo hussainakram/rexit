@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+
+
+.home_page {
+  background: image-url("jumbotron-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 724px;
+  border-radius: 20px;
+  width: 100%;
+  opacity: 0.2;
+}
+
+.sign-in-up-button {
+  border-radius: 18px !important;
+  margin-right: 5px;
+  margin-top: 9px;
+  text-align: right;
+}
+
+.nav-bar-buttons {
+  text-align: right;
+}
+
+.pickup-btn {
+  text-align: center;
+}
+
+.form-group {
+  width: 500px;
+}
+
+.devise-signup {
+  text-align: center;
+}
