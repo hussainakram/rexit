@@ -32,11 +32,14 @@ ActiveAdmin.register Bag do
       @bag = Bag.find(params[:id])
       @bag.update_column(:weight, params[:bag][:weight])
       if @bag.bag_type.present?
-        if @bag.bag_type == "PET" || @bag.bag_type == "TIN"
-          price = @bag.weight.to_i * 15
+        if @bag.bag_type == "PET"
+          price = @bag.weight.to_i * 32
+          @bag.update_column(:price, price)
+        elsif @bag.bag_type == "TIN"
+          price = @bag.weight.to_i * 52
           @bag.update_column(:price, price)
         elsif @bag.bag_type == "Mixed/Dry"
-          @bag.update_column(:price, @bag.weight * 10)
+          @bag.update_column(:price, @bag.weight * 12)
         end
       end
       redirect_to resource_path
