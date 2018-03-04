@@ -24,6 +24,14 @@
   width: 100%;
   opacity: 0.2;
 }
+.navbar-brand:hover {
+  background-color: transparent;
+  color: #999999;
+}
+
+.nav-intro-buttons:hover {
+  color: #666;
+}
 
 .sign-in-up-button {
   border-radius: 18px !important;
