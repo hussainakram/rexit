@@ -3,12 +3,14 @@
     <hr>
     <!-- Heading Row -->
     <div class="row">
-        
+
         <div class="container jumbo-image home_page">
         </div>
+        <hr>
         <div class="pickup-btn">
+            <h1>Got some bag filled?</h1>
             <% if user_signed_in? %>
-                <%= link_to "Reuqest For Pickup", new_bag_path, class: 'btn btn-warning'  %>
+                <%= link_to "Reuqest For Pickup", new_bag_path, class: 'btn btn-danger', id: 'cracker1-button'  %>
             <% else %>
                 <h2>Kinldy Register Yourself to be a Part of this Change!</h2>
             <% end %>
@@ -41,13 +43,6 @@
 <br>
 
     <!-- Footer -->
-    <footer>
-        <div class="row">
-            <div class="col-lg-12">
-                <p>Copyright &copy; Your Website 2014</p>
-            </div>
-        </div>
-    </footer>
 
 </div>
 <!-- /.container -->
